@@ -14,3 +14,5 @@ set(MAIN_SOURCES
 add_executable(BlueZTest
     ${MAIN_SOURCES}
 	       )
+
+target_link_libraries(BlueZTest bluetooth)
