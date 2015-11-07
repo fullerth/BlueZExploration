@@ -6,6 +6,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(lib/gmock)
 add_subdirectory(main)
+add_subdirectory(test/testfoo)
+add_subdirectory(libfoo)
 
 #Gmock Setup
 set(MAIN_SOURCES
@@ -16,3 +18,4 @@ add_executable(BlueZTest
 	       )
 
 target_link_libraries(BlueZTest bluetooth)
+
