@@ -4,10 +4,14 @@ project(BlueZTest)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-add_subdirectory(lib/gmock)
 add_subdirectory(main)
 add_subdirectory(test/testfoo)
 add_subdirectory(libfoo)
+add_subdirectory(lib/gtest)
+
+include_directories(
+    "lib/gmock/include"
+)
 
 #Gmock Setup
 set(MAIN_SOURCES
