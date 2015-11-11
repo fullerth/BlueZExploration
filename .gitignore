@@ -36,6 +36,13 @@ cmake_install.cmake
 install_manifest.txt
 CMakeCache.txt
 
+### CTest ###
+Testing/Temporary
+CTestTestfile.cmake
+DartConfiguration.tcl
+
+
+
 ### Vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]

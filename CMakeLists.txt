@@ -2,10 +2,13 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(BlueZTest)
 
+include(CTest)
+
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(main)
 add_subdirectory(test/testfoo)
+add_test(NAME AllTestsInFoo COMMAND testfoo)
 add_subdirectory(libfoo)
 add_subdirectory(lib/gtest)
 
