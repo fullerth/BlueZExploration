@@ -7,9 +7,15 @@ include(CTest)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 add_subdirectory(main)
+
 add_subdirectory(test/testfoo)
 add_test(NAME AllTestsInFoo COMMAND testfoo)
 add_subdirectory(libfoo)
+
+add_subdirectory(rfcommSocket)
+add_subdirectory(test/testRfcommSocket)
+add_test(NAME TestRfcommSocket COMMAND testRfcommSocket)
+
 add_subdirectory(lib/gtest)
 
 include_directories(
