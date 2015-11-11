@@ -1,5 +1,7 @@
 set(TEST_FOO_SOURCES
-    main.cxx)
+    main.cxx
+    testfoo.cxx
+)
 
 add_executable(testfoo ${TEST_FOO_SOURCES})
 
