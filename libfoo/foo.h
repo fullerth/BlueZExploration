@@ -1,5 +1,5 @@
+#ifndef __foo_h__
+#define __foo_h__
+int Factorial(int n);
 
-class Foo
-{
-    bool baz(bool useQux);
-};
+#endif //__foo_h__
