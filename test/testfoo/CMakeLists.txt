@@ -12,6 +12,7 @@ target_link_libraries(testfoo
 
 include_directories(
     "../../lib/gtest/include/"
+    "../../libfoo/"
 )
 
 install(TARGETS testfoo DESTINATION bin)
