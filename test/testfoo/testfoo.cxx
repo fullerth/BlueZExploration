@@ -1,5 +1,4 @@
 #include "testfoo.h"
-#include "gtest/gtest.h"
 
 TEST(FactorialTest, Negative)
 {
