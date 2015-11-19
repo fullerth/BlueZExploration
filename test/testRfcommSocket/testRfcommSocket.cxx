@@ -4,5 +4,8 @@
 TEST(RfcommSocketTest, DefaultConstructor)
 {
     const RfcommSocket r;
-    EXPECT_EQ(1, sizeof(RfcommSocket));
+    int s = r.getSocket();
+    EXPECT_EQ(NULL, s);
 }
+
+
