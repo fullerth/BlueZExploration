@@ -16,6 +16,8 @@ add_subdirectory(rfcommSocket)
 add_subdirectory(test/testRfcommSocket)
 add_test(NAME TestRfcommSocket COMMAND testRfcommSocket)
 
+add_subdirectory(deviceScan)
+
 add_subdirectory(lib/gtest)
 
 include_directories(
